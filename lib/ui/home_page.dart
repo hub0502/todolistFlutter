@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_todolist/services/theme_services.dart';
 import 'package:get_storage/get_storage.dart';
 
 class HomePage extends StatefulWidget {
@@ -23,7 +24,9 @@ _appBar() {
   final s = GetStorage();
   return AppBar(
     leading: GestureDetector(
-      onTap: () {},
+      onTap: () {
+        ThemeService().switchTheme();
+      },
       child: Icon(
         Icons.nightlight_round,
         size: 20,
