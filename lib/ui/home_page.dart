@@ -35,7 +35,6 @@ _appBar() {
         size: 20,
       ),
       SizedBox(width: 20),
-      Text((s.read('isDarkMode') ?? false).toString())
     ],
   );
 }
